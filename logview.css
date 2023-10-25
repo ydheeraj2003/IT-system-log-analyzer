@@ -1,0 +1,43 @@
+/* styles.css */
+body{
+  background-color: black;
+}
+h3{
+  color: white;
+  text-align: center;
+
+}
+.row {
+    display: flex;
+    justify-content: center;
+}
+img{
+  width: 8%;
+}
+.custom-width-button {
+  width: 50%;
+}
+.btn-success img:hover {
+    transform: scale(1.2);
+    transition: transform 0.3s;
+}
+
+.col {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: center;
+}
+.highlight-logID {
+    background-color: #800080;
+    font-weight: bold;
+}
+
+.highlight-mission {
+    background-color: #800080;
+    font-weight: bold;
+}
+
+.highlight-details {
+    background-color: #800080;
+    font-weight: bold;
+}

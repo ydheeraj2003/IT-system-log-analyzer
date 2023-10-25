@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="signup.css">
+    <script>
+        function validatePassword() {
+            var password = document.getElementById("password").value;
+            var confirmPassword = document.getElementById("rePassword").value;
+            if (password != confirmPassword) {
+                alert("Passwords do not match.");
+                return false;
+            }
+            var username = document.getElementById("username").value;
+            var email = document.getElementById("Email-id").value;
+            if (username !== email) {
+                alert("Username and Email must match.");
+                return false;
+            }
+            return true;
+        }
+    </script>
+    <title>Signup</title>
+</head>
+<body>
+    <div class="signup-form">
+      <h3>Signup</h3>
+        <form action="login.html"onsubmit="return validatePassword()">
+            <label for="firstName">First Name:</label>
+            <input type="text" id="firstName" name="firstName" required><br><br>
+            <label for="lastName">Last Name:</label>
+            <input type="text" id="lastName" name="lastName" required><br><br>
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" pattern=".*@.*" title="Username should contain @ symbol" required><br><br>
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" pattern=".{8,}" title="Password must be at least 8 characters long" required><br><br>
+            <label for="rePassword">Re-enter Password:</label>
+            <input type="password" id="rePassword" name="rePassword" required><br><br>
+            <input type="submit" value="Submit">
+        </form>
+    </div>
+</body>
+</html>

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="logview.css">
+    <title>Grid Layout</title>
+</head>
+
+<body>
+  <br><br><br><br><br>
+  <h3>Log data</h3>
+    <div class="container mt-4">
+        <div class="row">
+            <div class="col">
+                <button type="button" class="btn btn-primary btn-block mb-2 highlight-logID">LogID</button>
+                <button type="button" class="btn btn-primary btn-block mb-2">1</button>
+                <button type="button" class="btn btn-primary btn-block mb-2">2</button>
+                <button type="button" class="btn btn-primary btn-block mb-2">3</button>
+                <button type="button" class="btn btn-primary btn-block mb-2">4</button>
+                <button type="button" class="btn btn-primary btn-block mb-2">5</button>
+
+            </div>
+            <div class="col">
+                <button type="button" class="btn btn-primary btn-block mb-2 highlight-mission">Name of the mission</button>
+                <button type="button" class="btn btn-primary btn-block mb-2">Operation Sadbhavna</button>
+                <button type="button" class="btn btn-primary btn-block mb-2">Operation Vijay</button>
+                <button type="button" class="btn btn-primary btn-block mb-2">Operation Rakshak</button>
+                <button type="button" class="btn btn-primary btn-block mb-2">Operation Anaconda</button>
+                <button type="button" class="btn btn-primary btn-block mb-2">Operation Sarp Vinash</button>
+            </div>
+            <div class="col">
+                <button type="button" class="btn btn-success btn-block mb-2 highlight-details">Additional details</button>
+                <button type="button" class="btn btn-success btn-block mb-2"><img src="phot.png" onclick="redirectToMissionDetails('mission1.html')"></button>
+                <button type="button" class="btn btn-success btn-block mb-2"><img src="phot.png" onclick="redirectToMissionDetails('mission2.html')"></button>
+                <button type="button" class="btn btn-success btn-block mb-2"><img src="phot.png" onclick="redirectToMissionDetails('mission3.html')"></button>
+                <button type="button" class="btn btn-success btn-block mb-2"><img src="phot.png" onclick="redirectToMissionDetails('mission4.html')"></button>
+                <button type="button" class="btn btn-success btn-block mb-2"><img src="phot.png" onclick="redirectToMissionDetails('mission5.html')"></button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS and jQuery -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script>
+        function redirectToMission(missionName) {
+            window.location.href = missionName + "mission1.html";
+        }
+
+        function redirectToMissionDetails(pageName) {
+            window.location.href = pageName;
+        }
+    </script>
+</body>
+
+</html>

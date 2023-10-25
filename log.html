@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="log.css">
+    <title>Input Form</title>
+</head>
+
+<body>
+    <div class="container mt-4">
+        <h3  id="logHeading">Enter the log data</h3>
+        <form id="logForm" onsubmit="submitForm(event)">
+            <div class="form-group">
+                <label for="timestamp">Timestamp</label>
+                <input type="datetime-local" class="form-control" id="timestamp" name="timestamp" required>
+            </div>
+            <div class="form-group">
+                <label for="hostname">Hostname</label>
+                <input type="text" class="form-control" id="hostname" name="hostname" required>
+            </div>
+            <div class="form-group">
+                <label for="priority">Priority</label>
+                <input type="text" class="form-control" id="priority" name="priority" required>
+            </div>
+            <div class="form-group">
+                <label for="facility">Facility</label>
+                <input type="text" class="form-control" id="facility" name="facility" required>
+            </div>
+            <div class="form-group">
+                <label for="tag">Tag</label>
+                <input type="text" class="form-control" id="tag" name="tag" required>
+            </div>
+            <div class="form-group">
+                <label for="message">Message</label>
+                <textarea class="form-control" id="message" name="message" rows="3" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+        <div id="successMessage" style="display: none;">
+            <br><br><br><br><p>Data is successfully submitted</p>
+            <button type="button" class="btn btn-secondary" onclick="redirectToLogPage()">View Log Data</button>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS and jQuery -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <script>
+        function submitForm(event) {
+            event.preventDefault();
+            const logHeading = document.getElementById('logHeading');
+            const logForm = document.getElementById('logForm');
+            logHeading.style.display = 'none';
+            logForm.style.display = 'none';
+            const successMessage = document.getElementById('successMessage');
+            successMessage.style.display = 'block';
+        }
+
+        function redirectToLogPage() {
+            window.location.href = 'logview.html'; // Change 'logPage.html' to the actual file name
+        }
+    </script>
+</body>
+
+</html>

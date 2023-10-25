@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./login.css">
+    <title>Login</title>
+</head>
+<body>
+    <div class="login-form">
+      <h3>Login</h3>
+        <form action="log.html">
+            <label for="Email-id">Email-id</label>
+            <input type="text" id="Email-id" name="Email-id" pattern=".*@.*" title="Username should contain @ symbol"required><br><br>
+            <label for="password">Password</label>
+            <input type="password" id="password" name="password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Password must contain at least one number, one uppercase and one lowercase letter, and at least 8 or more characters" required><br><br>
+            <input type="submit" value="Submit">
+        </form>
+      
+    </div>
+</body>
+</html>

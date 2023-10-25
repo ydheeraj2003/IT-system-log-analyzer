@@ -1,0 +1,19 @@
+body{
+  background-color: black;
+}
+
+form {
+  color: white;
+}
+#logHeading{
+  text-align: center;
+  color: white;
+}
+p{
+  color: white;
+  text-align: center;
+  font-size: 40px;
+}
+button.btn-secondary{
+  margin-left: 500px;
+}

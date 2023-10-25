@@ -1,0 +1,28 @@
+body{
+  background-color: black;
+}
+p{
+  margin-left: auto;
+  color: black;
+}
+h3{
+  color: white;
+  text-align: center;
+  font-size: 30px;
+}
+.mission {
+  background-color:  #d6d8db;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+.missiona {
+  background-color:#d6d8db;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+.missionb {
+  background-color: #d6d8db;
+  padding: 20px;
+  margin-bottom: 20px;
+}
